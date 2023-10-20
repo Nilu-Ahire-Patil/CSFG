@@ -1,0 +1,43 @@
+﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frame.master.cs" Inherits="CSFG.Frame" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>CSFG PUCSD</title>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Sources/css/Main/header.css" rel="stylesheet" />
+    <link href="Sources/css/Main/main.css" rel="stylesheet" />
+    <link href="Sources/css/Main/panel.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <section>
+            <div class="container">
+                <header>
+                    <a href="#" class="logo" >CSFG</a>
+                    <ul>
+                        <li><a  href="/Default.aspx"  class="hed_home">Home</a></li>
+                        <li><a href="/Team.aspx"  class="hed_team">Team</a></li>
+                        <li><a href="/Contact.aspx" class="hed_contact">Contact</a></li>
+                        <li><a href="/About.aspx" class ="hed_about">About</a></li>
+                    </ul>
+                    <a class="profileimg" href="/Sources/web/login.aspx" role="button">
+                        <img src="/Sources/img/dept.jpg" class="profileimg" />
+                    </a>
+                </header>
+                <div class="panel">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <p class="copyrightText">
+                    Copyright @----------- All  right reserved.
+                </p>
+            </div>
+        </section>
+    </form>
+</body>
+</html>
