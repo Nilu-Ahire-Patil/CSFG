@@ -70,7 +70,6 @@
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="Notes.aspx" />
     <Content Include="Sources\css\About\about.css" />
     <Content Include="Sources\css\Activities\activities.css" />
     <Content Include="Sources\css\Contact\contact.css" />
@@ -109,13 +108,6 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Notes.aspx.cs">
-      <DependentUpon>Notes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Notes.aspx.designer.cs">
-      <DependentUpon>Notes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sources\class\cls_main.cs" />
     <Compile Include="Sources\class\cls_sql.cs" />

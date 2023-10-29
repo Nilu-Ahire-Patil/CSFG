@@ -1,18 +1,4 @@
-﻿.editarea {
-    min-width: calc(100% - 145px);
-    min-height: 500px;
-    transform: translateX(-20px);
-    max-width: 700px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;    
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255,0.5);
-    /* padding: 20px; */
-    margin: 5px;
-}
+﻿
 
 header ul li a.hed_home {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -25,42 +11,7 @@ header ul li a.hed_home {
     background: rgb(255 196 247);
 }
 
-.content {
-    text-align: center;
-    transform: translateX(-35px);
-    max-width: 700px;
-    /* border-radius: 20px; */
-    /* border: 1px solid rgb(235 16 16); */
-    /* padding: 10px; */
-    /* margin: 10px; */
-    /* padding-left: 110px; */
-    /* padding-left: 110px; */
-}
 
-    .content ul li a:hover {
-        background: rgb(255 196 247);
-    }
-
-
-    .content a {
-        display: inline-block;
-        min-width: 100%;
-        padding: 15px 30px;
-        /*background: rgb(255 196 247);*/
-        color: #8a2435;
-        margin: 5px;
-        border-radius: 10px;
-        font-size: 1.2em;
-        font-weight: 500;
-        text-decoration: none;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        backdrop-filter: blur(5px);
-        background: rgba(255, 255, 255, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
-        border-left: 1px solid rgba(255, 255, 255,0.5);
-    }
 
 /*.sci {
     position: absolute;

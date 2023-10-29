@@ -30,6 +30,15 @@
                     </a>
                 </header>
                 <div class="panel">
+                    <div class="content">
+                        <ul style="list-style: none;">
+                            <li><a href="../Utility/Notes.aspx">Notes </a></li>
+                            <li><a href="../Utility/Activities.aspx">Activities</a></li>
+                            <li><a href="../Utility/Events.aspx">Events</a></li>
+                            <li><a href="../Utility/Gallery.aspx">Gallery</a></li>
+                            <li><a href="../Utility/Upcomming.aspx">Upcomming</a></li>
+                        </ul>
+                    </div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>

@@ -3,4 +3,8 @@
     <link href="../Sources/css/Gallery/gallery.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="griding">
+        <div class="element">
+        </div>
+    </div>
 </asp:Content>
