@@ -49,9 +49,27 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255,0.5);
-    /* padding: 20px; */
+    padding: 20px;
     margin: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: column;
 }
+
+.displayimage {
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.text {
+    font-weight: 500;
+    color: #8a2435;
+    padding: 8px 15px;
+}
+
 
 .griding {
     display: flex;

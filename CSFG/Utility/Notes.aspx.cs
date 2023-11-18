@@ -13,5 +13,10 @@ namespace CSFG.Utility
         {
 
         }
+
+        protected void open_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
