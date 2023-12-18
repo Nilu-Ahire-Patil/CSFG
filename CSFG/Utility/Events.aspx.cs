@@ -11,7 +11,16 @@ namespace CSFG.Utility
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                rep_event.DataSource = cls_sql.getDataTable(cls_sql.view_all_event);
+                rep_event.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('[ERROR]'" + ex.Message + "'');</script>");
+                cls_sql.putLog(ex.Message, cls_userInitial.getUserId());
+            }
         }
     }
 }

@@ -76,23 +76,33 @@
     <Content Include="Sources\css\Default\default.css" />
     <Content Include="Sources\css\Events\events.css" />
     <Content Include="Sources\css\Gallery\gallery.css" />
+    <Content Include="Sources\css\Login\StyleSheetForgotPassword.css" />
+    <Content Include="Sources\css\Login\StyleSheetLogin.css" />
+    <Content Include="Sources\css\Login\StyleSheetMain.css" />
+    <Content Include="Sources\css\Login\StyleSheetNewAccount.css" />
     <Content Include="Sources\css\Main\header.css" />
-    <Content Include="Sources\css\Login\login.css" />
+    <Content Include="Sources\css\Login\loginOLD.css" />
     <Content Include="Sources\css\Main\main.css" />
     <Content Include="Sources\css\Notes\notes.css" />
     <Content Include="Sources\css\Main\panel.css" />
     <Content Include="Sources\css\Team\team.css" />
     <Content Include="Sources\css\templetMain.css" />
     <Content Include="Sources\css\Upcomming\upcomming.css" />
+    <Content Include="Sources\img\csfg.png" />
     <Content Include="Sources\img\dept.jpg" />
+    <Content Include="Sources\img\file.png" />
+    <Content Include="Sources\sql\CSFG_DB -NEW.sql" />
+    <Content Include="Sources\sql\CSFG_DB.sql" />
     <Content Include="Team.aspx" />
     <Content Include="Utility\Activities.aspx" />
     <Content Include="Utility\Events.aspx" />
     <Content Include="Utility\Gallery.aspx" />
+    <Content Include="Utility\Login.aspx" />
     <Content Include="Utility\Notes.aspx" />
+    <Content Include="Utility\SendRequest.aspx" />
+    <Content Include="Utility\signup.aspx" />
     <Content Include="Utility\Upcomming.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Sources\web\login.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -126,13 +136,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sources\web\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\web\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Sources\class\cls_userInitial.cs" />
     <Compile Include="Team.aspx.cs">
       <DependentUpon>Team.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,12 +165,33 @@
     <Compile Include="Utility\Gallery.aspx.designer.cs">
       <DependentUpon>Gallery.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utility\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Utility\Notes.aspx.cs">
       <DependentUpon>Notes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Utility\Notes.aspx.designer.cs">
       <DependentUpon>Notes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\SendRequest.aspx.cs">
+      <DependentUpon>SendRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\SendRequest.aspx.designer.cs">
+      <DependentUpon>SendRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utility\Upcomming.aspx.cs">
       <DependentUpon>Upcomming.aspx</DependentUpon>
@@ -187,6 +212,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Dynamic\" />
   </ItemGroup>
   <PropertyGroup>

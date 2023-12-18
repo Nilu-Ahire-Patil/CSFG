@@ -7,10 +7,6 @@ namespace CSFG
 {
     public static class cls_main
     {
-       public struct ValidationReturn
-       {
-            public int ID;
-            public string Message;
-       };
+          
     }
 }

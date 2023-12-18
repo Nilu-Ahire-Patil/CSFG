@@ -7,83 +7,92 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSFG.web
+namespace CSFG.Utility
 {
 
 
-    public partial class login
+    public partial class signup
     {
 
         /// <summary>
-        /// form_login control.
+        /// txt_signup_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form_login;
+        protected global::System.Web.UI.WebControls.TextBox txt_signup_name;
 
         /// <summary>
-        /// pan_login control.
+        /// txt_signup_user_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pan_login;
+        protected global::System.Web.UI.WebControls.TextBox txt_signup_user_name;
 
         /// <summary>
-        /// lab_rollno control.
+        /// txt_signup_password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lab_rollno;
+        protected global::System.Web.UI.WebControls.TextBox txt_signup_password;
 
         /// <summary>
-        /// txt_rollno control.
+        /// file_proile_img control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_rollno;
+        protected global::System.Web.UI.WebControls.FileUpload file_proile_img;
 
         /// <summary>
-        /// lab_password control.
+        /// drop_gender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lab_password;
+        protected global::System.Web.UI.WebControls.DropDownList drop_gender;
 
         /// <summary>
-        /// txt_password control.
+        /// txt_use_mo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_password;
+        protected global::System.Web.UI.WebControls.TextBox txt_use_mo;
 
         /// <summary>
-        /// btn_login control.
+        /// txt_usr_mail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_login;
+        protected global::System.Web.UI.WebControls.TextBox txt_usr_mail;
 
         /// <summary>
-        /// lab_error control.
+        /// txt_link control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lab_error;
+        protected global::System.Web.UI.WebControls.TextBox txt_link;
+
+        /// <summary>
+        /// btn_send_request control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_send_request;
     }
 }

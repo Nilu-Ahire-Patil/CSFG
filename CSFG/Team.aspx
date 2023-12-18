@@ -6,12 +6,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="griding">
-        <div class="element">
-            <asp:Image ID="profileimg" AlternateText="404!" CssClass="displayimage" ImageUrl="Sources/img/dept.jpg" runat="server" />
-            <asp:Label ID="name" CssClass="text" runat="server" Text="Name"></asp:Label>
-            <asp:Label ID="roll_no" CssClass="text" runat="server" Text="Roll No."></asp:Label>
-            <asp:Label ID="number" CssClass="text" runat="server" Text="Number"></asp:Label>
-            <asp:Label ID="email" CssClass="text" runat="server" Text="Email"></asp:Label>
-        </div>
-    </div>
+                
+        <asp:Repeater ID="rep_member" runat="server">
+            <ItemTemplate>
+                <div runat="server" class="element" id="filelink">
+                    <asp:LinkButton CssClass="displayimage" ID="img_profileimg" runat="server" href='<%#Eval("stu_link") %>' CommandArgument='<%#Eval("stu_link") %>'>                       
+                        <img class="displayimage" src="../Sources/img/<%# Eval("img_name") %>" alt="<%#Eval("img_name") %>" />
+                    </asp:LinkButton>
+                    <asp:LinkButton ID="txt_sub_name" CssClass="text" href='<%#Eval("stu_link") %>' runat="server" Text='<%# Eval("stu_name") %>' CommandArgument='<%#Eval("stu_link") %>'> </asp:LinkButton>
+                    <asp:Label ID="txt_stu_roll" CssClass="text" runat="server" Text='<%# Eval("stu_id") %>'></asp:Label>
+                    <asp:LinkButton ID="txt_tu_mo" CssClass="text" runat="server" href='tel:<%#Eval("stu_mo") %>' Text='<%# Eval("stu_mo") %>' CommandArgument='tel:<%#Eval("stu_mo") %>'></asp:LinkButton>
+                    <asp:LinkButton ID="txt_stu_mail" CssClass="text" runat="server" href='mailto:<%#Eval("stu_mail") %>' Text='<%# Eval("stu_mail") %>' CommandArgument='mailto:<%#Eval("stu_mo") %>'></asp:LinkButton>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+
+     </div>
 </asp:Content>

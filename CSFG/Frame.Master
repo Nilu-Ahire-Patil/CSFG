@@ -18,15 +18,15 @@
         <section>
             <div class="container">
                 <header>
-                    <a href="#" class="logo" >CSFG</a>
+                    <img src="../Sources/img/csfg.png" alt="CSFG" class="logo"  />
                     <ul>
-                        <li><a  href="/Default.aspx"  class="hed_home">Home</a></li>
-                        <li><a href="/Team.aspx"  class="hed_team">Team</a></li>
-                        <li><a href="/Contact.aspx" class="hed_contact">Contact</a></li>
-                        <li><a href="/About.aspx" class ="hed_about">About</a></li>
+                        <li><a  href="../Default.aspx"  class="hed_home">Home</a></li>
+                        <li><a href="../Team.aspx"  class="hed_team">Team</a></li>
+                        <li><a href="../Contact.aspx" class="hed_contact">Contact</a></li>
+                        <li><a href="../About.aspx" class ="hed_about">About</a></li>
                     </ul>
-                    <a class="profileimg" href="/Sources/web/login.aspx" role="button">
-                        <img src="/Sources/img/dept.jpg" class="profileimg" />
+                    <a class="profileimg" href="../Sources/web/login.aspx" role="button">
+                        <img src="../Sources/img/dept.jpg" class="profileimg" />
                     </a>
                 </header>
                 <div class="panel">
@@ -37,13 +37,14 @@
                             <li><a href="../Utility/Events.aspx">Events</a></li>
                             <li><a href="../Utility/Gallery.aspx">Gallery</a></li>
                             <li><a href="../Utility/Upcomming.aspx">Upcomming</a></li>
+                            <li><a href="../Utility/SendRequest.aspx">Upload</a></li>
                         </ul>
                     </div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
                 <p class="copyrightText">
-                    Copyright @----------- All  right reserved.
+                    *Copyright @CSFG-B22 All  right reserved.
                 </p>
             </div>
         </section>

@@ -17,6 +17,7 @@
 }
 
     header .logo {
+        width:100px;
         color: #8a2435;
         font-weight: 700;
         text-decoration: none;
