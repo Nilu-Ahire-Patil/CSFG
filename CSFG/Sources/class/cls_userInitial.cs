@@ -62,7 +62,7 @@ namespace CSFG
         }
 
 
-        public static bool validateUser(int _id, string _pass)
+        public static bool setandvalidateUser(int _id, string _pass)
         {
             try
             {
@@ -70,7 +70,7 @@ namespace CSFG
                 {
                     islogin = true;
                     user_id = _id;
-                    user_name = null;//grt string return from 'cls_sql.validateUser(_id, _pass)' this function and asign it
+                    user_name = null;//get string return from 'cls_sql.validateUser(_id, _pass)' this function and asign it
                     user_pass = _pass;
                     return true;
                 }

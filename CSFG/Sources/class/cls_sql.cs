@@ -9,7 +9,6 @@ using System.Data;
 
 namespace CSFG
 {
-    
     public class cls_sql
     {
         /// <summary>
@@ -18,7 +17,9 @@ namespace CSFG
         private static String ConnString = ConfigurationManager.ConnectionStrings["csfg_db_configuration"].ConnectionString;
         private static SqlConnection Conn = new SqlConnection(ConnString);
 
-
+        /// <summary>
+        /// All view queries to bind data to page
+        /// </summary>
         public static string view_verified_note = "select * from view_verified_note order by view_verified_note.note_date desc";
         public static string view_pending_note = "select * from view_pending_note order by view_pending_note.note_date desc";
         public static string view_all_note = "select * from view_all_note order by view_all_note.note_date desc";
@@ -27,6 +28,13 @@ namespace CSFG
         public static string view_delete_event = "select * from view_delete_event order by view_all_event.eve_date desc";
 
         public static string view_csfg_member = "select * from view_csfg_member order by view_csfg_member.stu_name desc";
+        
+        public static string view_all_activities = "select * from view_all_activities order by view_all_activities.act_date desc"; 
+
+        public static string view_all_gallery = "select * from view_all_gallery order by view_all_gallery.eve_date desc";
+        public static string view_verified_gallery = "select * from view_verified_gallery order by view_verified_gallery.eve_date desc";
+        public static string view_pending_gallery = "select * from view_pending_gallery order by view_pending_gallery.eve_date desc";
+        public static string view_upcomming_event = "select* from view_upcomming_event order by view_upcomming_event.eve_date desc";
         /// <summary>
         /// if connection is close it open it
         /// </summary>
@@ -39,7 +47,6 @@ namespace CSFG
             }
             catch (Exception)
             {
-               
                 throw;
             }
         }
@@ -60,6 +67,12 @@ namespace CSFG
             }
         }
 
+        /// <summary>
+        /// validating user is valid or not
+        /// </summary>
+        /// <param name="_id"></param>
+        /// <param name="_pass"></param>
+        /// <returns>True for valid combination of _id and _pass</returns>
         public static bool validateUser(int _id, string _pass)
         {
             try
@@ -114,26 +127,6 @@ namespace CSFG
             }
             catch (Exception)
             {
-                throw;
-            }
-        }
-        
-
-        /// <summary>
-        /// Checks the user is valid or not.
-        /// </summary>
-        /// <param name="stu_id"></param>
-        /// <param name="stu_pass"></param>
-        /// <returns></returns>
-        public static bool isValidUser(string stu_id, string stu_pass)
-        {
-            try
-            {
-
-                return true;
-            }
-            catch (Exception)
-            { 
                 throw;
             }
         }

@@ -10,7 +10,7 @@
         <asp:Repeater ID="rep_member" runat="server">
             <ItemTemplate>
                 <div runat="server" class="element" id="filelink">
-                    <asp:LinkButton CssClass="displayimage" ID="img_profileimg" runat="server" href='<%#Eval("stu_link") %>' CommandArgument='<%#Eval("stu_link") %>'>                       
+                    <asp:LinkButton CssClass="displayimage" ID="img_profileimg" runat="server" href='<%#Eval("stu_link") %>' CommandArgument='<%#Eval("stu_link") %>'>
                         <img class="displayimage" src="../Sources/img/<%# Eval("img_name") %>" alt="<%#Eval("img_name") %>" />
                     </asp:LinkButton>
                     <asp:LinkButton ID="txt_sub_name" CssClass="text" href='<%#Eval("stu_link") %>' runat="server" Text='<%# Eval("stu_name") %>' CommandArgument='<%#Eval("stu_link") %>'> </asp:LinkButton>

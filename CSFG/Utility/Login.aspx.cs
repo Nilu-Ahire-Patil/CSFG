@@ -14,7 +14,8 @@ namespace CSFG.Utility
             try
             {
                 if (cls_userInitial.loginStatus())
-                    cls_userInitial.logOut();         
+                    Response.Write("<script>alert('[WARNING] You Allready loged in try to logout and try again');</script>");
+                //cls_userInitial.logOut();         
             }
             catch (Exception ex)
             {
@@ -34,7 +35,7 @@ namespace CSFG.Utility
             {
                 if (txt_login_user_name.Text != null && txt_password.Text != null)
                 {
-                    if (cls_userInitial.validateUser(int.Parse(txt_login_user_name.Text), txt_password.Text))
+                    if (cls_userInitial.setandvalidateUser(int.Parse(txt_login_user_name.Text), txt_password.Text))
                     {
                         Response.Write("<script>alert('[SUCCESS] Login Successfully');</script>");
                         cls_sql.putLog("LOGIN SUCCESSFULLY", cls_userInitial.getUserId());

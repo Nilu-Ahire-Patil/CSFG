@@ -33,9 +33,45 @@
     margin: 5px;
 }
 
-    .content ul li a:hover {
+.content ul li a:hover {
         background: rgb(255 196 247);
-    }
+}
+
+.about {
+    min-width: calc(100% - 145px);
+    min-height: 400px;
+    transform: translateX(-20px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    padding: 20px;
+    margin: 5px;
+}
+
+.galimg {
+    transform: translateX(-20px);
+    max-width: 700px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    /* padding: 20px; */
+    margin: 5px;
+}
+
+.galdiaplayimge {
+    border-radius: 10px;
+    max-height: 350px;
+    max-width: 350px;
+}
+
 
 .element {
     min-width: 270px;
@@ -99,6 +135,7 @@
         border-top: 1px solid rgba(255, 255, 255, 0.5);
         border-left: 1px solid rgba(255, 255, 255,0.5);
     }
+
 section {
     display: flex;
     background: url(/Sources/img/dept.jpg);

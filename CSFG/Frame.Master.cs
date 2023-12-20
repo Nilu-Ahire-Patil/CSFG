@@ -11,7 +11,7 @@ namespace CSFG
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txt_btn_id.Text = (cls_userInitial.loginStatus()) ? cls_userInitial.getUserId().ToString() : "LOGIN";
         }
     }
 }
